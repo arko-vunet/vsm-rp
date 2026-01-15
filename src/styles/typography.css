@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  --font-family-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-family-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+
+  --type-h1-size: 28px;
+  --type-h1-line: 32px;
+  --type-h1-weight: 400;
+  --type-h1-letter: -0.25px;
+
+  --type-h2-size: 24px;
+  --type-h2-line: 28px;
+  --type-h2-weight: 400;
+  --type-h2-letter: 0px;
+
+  --type-h3-size: 22px;
+  --type-h3-line: 24px;
+  --type-h3-weight: 400;
+  --type-h3-letter: 0px;
+
+  --type-h4-size: 18px;
+  --type-h4-line: 22px;
+  --type-h4-weight: 400;
+  --type-h4-letter: 0.25px;
+
+  --type-h5-size: 16px;
+  --type-h5-line: 22px;
+  --type-h5-weight: 400;
+  --type-h5-letter: 0px;
+
+  --type-h6-size: 14px;
+  --type-h6-line: 22px;
+  --type-h6-weight: 600;
+  --type-h6-letter: 0.15px;
+
+  --type-body-size: 14px;
+  --type-body-line: 22px;
+  --type-body-weight: 400;
+  --type-body-letter: 0.15px;
+
+  --type-body-small-size: 12px;
+  --type-body-small-line: 18px;
+  --type-body-small-weight: 400;
+  --type-body-small-letter: 0.15px;
+
+  --type-code-size: 14px;
+  --type-code-line: 16px;
+  --type-code-weight: 400;
+  --type-code-letter: 0.15px;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line);
+  letter-spacing: var(--type-body-letter);
+}
+
+h1 {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-h1-size);
+  font-weight: var(--type-h1-weight);
+  line-height: var(--type-h1-line);
+  letter-spacing: var(--type-h1-letter);
+}
+
+h2 {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-h2-size);
+  font-weight: var(--type-h2-weight);
+  line-height: var(--type-h2-line);
+  letter-spacing: var(--type-h2-letter);
+}
+
+h3 {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-h3-size);
+  font-weight: var(--type-h3-weight);
+  line-height: var(--type-h3-line);
+  letter-spacing: var(--type-h3-letter);
+}
+
+h4 {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-h4-size);
+  font-weight: var(--type-h4-weight);
+  line-height: var(--type-h4-line);
+  letter-spacing: var(--type-h4-letter);
+}
+
+h5 {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-h5-size);
+  font-weight: var(--type-h5-weight);
+  line-height: var(--type-h5-line);
+  letter-spacing: var(--type-h5-letter);
+}
+
+h6 {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-h6-size);
+  font-weight: var(--type-h6-weight);
+  line-height: var(--type-h6-line);
+  letter-spacing: var(--type-h6-letter);
+}
+
+p,
+.text-body {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-body-size);
+  font-weight: var(--type-body-weight);
+  line-height: var(--type-body-line);
+  letter-spacing: var(--type-body-letter);
+}
+
+.text-body-small {
+  font-family: var(--font-family-sans);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line);
+  letter-spacing: var(--type-body-small-letter);
+}
+
+code,
+pre,
+kbd,
+samp,
+.text-code {
+  font-family: var(--font-family-mono);
+  font-size: var(--type-code-size);
+  font-weight: var(--type-code-weight);
+  line-height: var(--type-code-line);
+  letter-spacing: var(--type-code-letter);
+}
