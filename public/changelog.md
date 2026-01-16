@@ -1,5 +1,11 @@
 # Changelog
 
+### Jan 16, 2026
+- Styled the `/` & `/changelog` routes to use Grafana Theme.
+- Added TailwindCSS to the project to speed-up & clean-up the CSS-writing chores.
+
+<br />
+
 ### Jan 15, 2026
 - Created a `components` folder to house custom UI components used across vuSmartMaps. The `utility` folder within `components` houses utility components–shared, non-product components used by supporting pages or non-product surfaces. A README for the same exists as well.<br />Files: `src/components`, `src/components/README.md`, `src/components/utility`
 - Added the type-styles used in Figma into the codebase.<br />Files: `src/styles/typography.css`
