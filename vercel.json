@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/changelog.md", "destination": "/changelog.md" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
