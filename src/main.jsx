@@ -1,6 +1,7 @@
 import { StrictMode, useMemo, useState } from 'react'
 import { createRoot } from 'react-dom/client'
-import { ThemeContext, createTheme } from '@grafana/data'
+import { createTheme } from '@grafana/data'
+import { ThemeContext } from '@grafana/ui'
 import './index.css'
 import App from './App.jsx'
 

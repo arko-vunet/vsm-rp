@@ -27,3 +27,11 @@
 .changelog li + li {
   margin-top: 0.25rem;
 }
+
+.flow-link {
+  text-decoration: none;
+}
+
+.flow-link:hover {
+  text-decoration: underline;
+}

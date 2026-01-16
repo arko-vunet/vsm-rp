@@ -1,6 +1,9 @@
 # Changelog
 
+<br />
+
 ### Jan 16, 2026
+- Added `tanStackTable` component from `kolar`.
 - Styled the `/` & `/changelog` routes to use Grafana Theme.
 - Added TailwindCSS to the project to speed-up & clean-up the CSS-writing chores.
 
