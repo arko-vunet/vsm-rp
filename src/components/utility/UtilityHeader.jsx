@@ -1,4 +1,6 @@
-import { Button, IconButton, useTheme2 } from '@grafana/ui'
+import { useTheme2 } from '@grafana/ui'
+import { VuButton } from '../button/VuButton'
+import { VuIconButton } from '../button/VuIconButton'
 import logo from '../../assets/logo.svg'
 
 function UtilityHeader({ onToggleTheme }) {
@@ -49,7 +51,7 @@ function UtilityHeader({ onToggleTheme }) {
           <img src={logo} alt="vunet" className="h-6" />
         </a>
         <div className="flex items-center gap-3">
-          <Button
+          <VuButton
             variant="secondary"
             fill='outline'
             size="md"
@@ -59,14 +61,13 @@ function UtilityHeader({ onToggleTheme }) {
             }}
           >
             Changelog
-          </Button>
-          <IconButton
-            name={themeIcon}
-            size="xl"
+          </VuButton>
+          <VuIconButton
+            icon={themeIcon}
             variant="secondary"
             onClick={onToggleTheme}
-            tooltip={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
-            tooltipPlacement="bottom"
+            toolTip={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
+            ariaLabel={isDark ? 'Switch to light theme' : 'Switch to dark theme'}
             className="cursor-pointer"
           />
         </div>

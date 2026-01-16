@@ -6,17 +6,22 @@ import React from "react";
 import { VuIcon } from "../icons/VuIcon";
 import { getFocusStyles, getMouseFocusStyles } from "../misc";
 const VuIconButton = React.forwardRef(
-  ({ name, ariaLabel, variant = "secondary", className, toolTip, ...restProps }, ref) => {
+  (
+    { name, icon, ariaLabel, variant = "secondary", className, toolTip, ...restProps },
+    ref
+  ) => {
     const styles = useStyles2(getStyles);
+    const title = toolTip ?? name ?? ariaLabel;
+    const iconElement = icon ? /* @__PURE__ */ jsx("span", { className: styles.icon, children: icon }) : /* @__PURE__ */ jsx(VuIcon, { name, className: styles.icon });
     return /* @__PURE__ */ jsx(
       "button",
       {
         ref,
-        "aria-label": ariaLabel,
+        "aria-label": ariaLabel ?? title,
         ...restProps,
         className: cx(styles.button(variant), className),
-        title: toolTip ?? name,
-        children: /* @__PURE__ */ jsx(VuIcon, { name, className: styles.icon })
+        title,
+        children: iconElement
       }
     );
   }

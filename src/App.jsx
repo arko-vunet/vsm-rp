@@ -14,6 +14,7 @@ function App({ onToggleTheme }) {
   const isChangelog = window.location.pathname === "/changelog";
   const isSnmpVendorPage =
     window.location.pathname === "/snmp-vendor-and-oid-extensibility";
+  const isHomePage = !isChangelog && !isSnmpVendorPage;
   const [markdown, setMarkdown] = useState("");
   const [error, setError] = useState("");
   const theme = useTheme2();
@@ -100,7 +101,7 @@ function App({ onToggleTheme }) {
 
   return (
     <main
-      className={`w-full ${isChangelog ? "changelog-page" : ""}`}
+      className={`w-full ${isChangelog || isHomePage ? "changelog-page" : ""}`}
       style={{
         backgroundColor: theme.colors.background.primary,
         color: "var(--app-text)",
@@ -131,21 +132,14 @@ function App({ onToggleTheme }) {
           </div>
         ) : (
           <div className="w-full">
-            <div
-              className="text-xl font-bold text-left"
-              style={{ color: theme.colors.text.primary }}
-            >
-              vuSmartMaps Rapid Prototyping
-            </div>
-            <div
-              className="text-md text-left"
-              style={{ color: theme.colors.text.secondary }}
-            >
-              This is a Rapid prototyping app built with Vite + React. This
-              project is meant to allow designers at VuNet Systems to quickly
-              iterate on clickable UI-prototypes to get feedback and alignment.
-              At this point in time, we're not expecting to contribute to the
-              production codebase, yet.
+            <div className="changelog">
+              <h1>vuSmartMaps Rapid Prototyping</h1>
+              <br />
+              <p>
+                This is a Rapid prototyping app built with Vite + React. This
+                project is meant to allow designers at VuNet Systems to quickly
+                iterate on clickable UI-prototypes to get feedback and alignment.
+              </p>
             </div>
             <VuTanStackTable
               table={table}
